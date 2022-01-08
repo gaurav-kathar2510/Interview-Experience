@@ -7,31 +7,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-
+    <!-- <link rel="stylesheet" href="stylebg.css"> -->
     <title>Document</title>
 </head>
 <body>
+    <div id="vantajs4">
+        <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+            <div class="container d-flex align-items-center justify-content-between">
     
-<div class="container register">
+                <div class="logo">
+                    <h1><a href="index.html"><span>iExperience<span style="color: #10115e;">Site</span></span></a></h1>
+                    <!-- Uncomment below if you prefer to use an image logo -->
+                    <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+                </div>
+    
+                <nav id="navbar" class="navbar">
+                    <ul>
+                        <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+                        <li><a class="nav-link scrollto" href="add.html">Add</a></li>
+                        <li><a class="nav-link scrollto" href="#">Feedback</a></li>     
+                    </ul>
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+                </nav>
+                <!-- .navbar -->
+    
+            </div>
+        </header>
+  <!-- End Header -->
+   <div class="container register">
     <div class="row">
         <div class="col-md-3 register-left">
             <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
             <h3>Welcome</h3>
-            <p>some quote add here related knowledge sharing</p>
+            <p>some quote add here</p>
             <input type="submit" name="" value="Visited Companies"/><br/>
         </div>
         <div class="col-md-9 register-right">
             <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Search</a>
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="index.html" role="tab" aria-controls="home" aria-selected="true">Search</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Add</a>
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="add.html" role="tab" aria-controls="profile" aria-selected="false">Add</a>
                 </li>
             </ul>
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    <h3 class="register-heading">Add </h3>
+                    <h3 class="register-heading">Add</h3>
                     <div class="row register-form">
                         <div class="col-md-6">
                             <div class="form-group">
@@ -40,14 +62,36 @@
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Student Name" value="" />
                             </div>
-                       </div>
+                           
+                        </div>
                         <div class="col-md-6">
-                            <input type="submit" class="btnRegister"  value="Add"/>
+                            <input type="submit" class="btnRegister"  value="ADD"/>
                         </div>
                     </div>
                 </div>
                
-
+            </div>
+        </div>
 </div>
+         
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+        <script>
+           VANTA.WAVES({
+            el: "#vantajs4",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            backgroundColor: 0x2d8ad6,
+            amplitudeFactor: 1.50,
+            xOffset: -0.28,
+            yOffset: -0.09,
+            size: 0.90
+            })
+            
+        </script>
 </body>
 </html>
